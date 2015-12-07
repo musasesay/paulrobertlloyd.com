@@ -10,6 +10,8 @@ layout: default
         <div class="s-prose s-prose--body  e-content">
             {{ content | improve }}
 
+            {% flickr_photoset page.photoset %}
+
             {% for photo in page.photos %}
             <figure class="u-extend">
                 {% capture photo_path %}{{ page.path | replace:"_galleries/","galleries/" | remove:".markdown" }}/{{ photo.id }}.jpg{% endcapture %}

@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem 'jekyll-typogrify'
 
   gem 'autoprefixer-rails'
+  gem 'flickraw'
   gem 'susy'
   gem 'uglifier'
   gem 'ruby-thumbor'
