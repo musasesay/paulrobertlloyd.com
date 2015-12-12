@@ -164,7 +164,7 @@ jekyll-crosspost_to_medium:
 
 # Flickr
 flickr:
-  cache_dir: './source/.jekyll-flickr'
+  cache_dir: './source/_data/photosets'
 
 # Archives
 jekyll-archives:

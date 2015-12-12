@@ -6,16 +6,15 @@ layout: default
 
     {% include page/footer.html %}
 
+    {% flickr_photoset page.photoset %}
+
     <div class="c-section c-section--body">
         <div class="s-prose s-prose--body  e-content">
             {{ content | improve }}
 
-            {% flickr_photoset page.photoset %}
-
-            {% for photo in page.photos %}
+            {% for photo in site.data.photosets.72157651219718931 %}
             <figure class="u-extend">
-                {% capture photo_path %}{{ page.path | replace:"_galleries/","galleries/" | remove:".markdown" }}/{{ photo.id }}.jpg{% endcapture %}
-                {% picture {{ photo_path }} alt="" %}
+                <img src="{{ photo.urlEmbeded }}" alt=""/>
                 <figcaption>
                     {% include exif.html %}
                 </figcaption>
