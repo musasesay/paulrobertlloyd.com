@@ -1,10 +1,13 @@
+require 'flickraw'
+
 module Jekyll
   module Flickr
     class Flickr < Jekyll::Generator
 
       DEFAULTS = {
-        'datafile' => 'photosets'
+        'folder_name' => 'photosets'
       }
+
 
       def initialize(config = nil)
         if config['jekyll-flickr'].nil?
@@ -16,18 +19,16 @@ module Jekyll
 
 
       def generate(site)
-        config = site.config['jekyll-flickr']
-        data_dir = site.config['source'] + '/_data'
-        photosets_dir = data_dir + '/photosets'
+        @site = site
+        @site.config['jekyll-flickr'] = @config
 
-        puts data_dir
-        puts photosets_dir
+        data_dir = site.config['source'] + '/_data'
+        folder_name = @config['folder_name']
+        photosets_dir = data_dir + '/' + folder_name
 
         Jekyll::Hooks.register :documents, :pre_render do |document|
           if document.data['photoset']
             @photoset = document.data['photoset']
-
-            puts @photoset
 
             # Write _data folder, if doesn’t exist
             if !Dir.exist?(data_dir)
@@ -49,11 +50,11 @@ module Jekyll
             path = File.join(photosets_dir, "#{@photoset}.yml")
 
             if File.exist?(path)
-              puts "Reading data for photoset @photoset"
+              puts "Reading data for photoset #{@photoset}"
               photos = YAML::load(File.read(path))
             else
-              puts "Writing data for photoset @photoset"
-              photos = generate_photo_data(@photoset, config)
+              puts "Writing data for photoset #{@photoset}"
+              photos = generate_photo_data(@photoset, @config)
               File.open(path, 'w') { |f| f.print(YAML::dump(photos)) }
             end
           end
@@ -85,48 +86,40 @@ module Jekyll
           id    = photos.photo[i].id
           title = photos.photo[i].title
 
-          exif = flickr.photos.getExif(:photo_id => id).exif.to_a
-
+          # TODO: Get date from flickr.photos.getInfo, not flickr.photos.getExif
           date_created  = exif.find { |e| e.tag == "CreateDate" }
+
+          exif          = flickr.photos.getExif(:photo_id => id).exif.to_a
           model         = exif.find { |e| e.tag == "Model"}
           f_number      = exif.find { |e| e.tag == "FNumber" }
           exposure_time = exif.find { |e| e.tag == "ExposureTime" }
           iso           = exif.find { |e| e.tag == "ISO" }
           focal_length  = exif.find { |e| e.tag == "FocalLength" }
 
-          urlThumb   = String.new
-          urlEmbeded = String.new
-          urlOpened  = String.new
-          urlVideo   = String.new
+          sizes         = flickr.photos.getSizes(:photo_id => id)
+          urlThumb      = sizes.find { |s| s.label == "Large Square" }
+          urlEmbeded    = sizes.find { |s| s.label == "Medium 800" }
+          urlOpened     = sizes.find { |s| s.label == "Large" }
+          urlVideo      = sizes.find { |s| s.label == "Site MP4" }
 
-          sizes = flickr.photos.getSizes(:photo_id => id)
-
-          urlThumb   = sizes.find { |s| s.label == "Large Square" }
-          urlEmbeded = sizes.find { |s| s.label == "Medium 800" }
-          urlOpened  = sizes.find { |s| s.label == "Large" }
-          urlVideo   = sizes.find { |s| s.label == "Site MP4" }
-
+          # TODO: Don't output YAML key if has no value
           photo = {
             'id' => id,
             'title' => title,
-            'date_created' => date_created ? date_created.raw : '',
-            'model' => model ? model.raw : '',
-            'f_number' => f_number ? f_number.raw : '',
-            'exposure_time' => exposure_time ? exposure_time.raw : '',
-            'iso' => iso ? iso.raw : '',
-            'focal_length' => focal_length ? focal_length.raw : '',
-            'urlThumb' => urlThumb ? urlThumb.source : '',
-            'urlEmbeded' => urlEmbeded ? urlEmbeded.source : '',
-            'urlOpened' => urlOpened ? urlOpened.source : '',
-            'urlVideo' => urlVideo ? urlVideo.source : '',
-            'urlFlickr' => urlVideo ? urlVideo.url : '',
+            'date_created' => date_created ? date_created.raw.gsub!(/(\d{4}):(\d{2}):(\d{2}) (\d{2}:\d{2}:\d{2})/, '\\1-\\2-\\3 \\4') : nil,
+            'model' => model ? model.raw : nil,
+            'f_number' => f_number ? f_number.raw : nil,
+            'exposure_time' => exposure_time ? exposure_time.raw : nil,
+            'iso' => iso ? iso.raw : nil,
+            'focal_length' => focal_length ? focal_length.raw : nil,
+            'urlThumb' => urlThumb ? urlThumb.source : nil,
+            'urlEmbeded' => urlEmbeded ? urlEmbeded.source : nil,
+            'urlOpened' => urlOpened ? urlOpened.source : nil,
+            'urlVideo' => urlVideo ? urlVideo.source : nil,
           }
 
           returnSet.push photo
         end
-
-        # Sleep a little to not get in trouble for bombarding Flickr servers
-        sleep 1
 
         returnSet
       end
