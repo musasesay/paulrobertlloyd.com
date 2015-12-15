@@ -162,10 +162,6 @@ jekyll-crosspost_to_medium:
   status: draft
   license: cc-40-by-nc-sa
 
-# Flickr
-flickr:
-  cache_dir: './source/_data/photosets'
-
 # Archives
 jekyll-archives:
   enabled:

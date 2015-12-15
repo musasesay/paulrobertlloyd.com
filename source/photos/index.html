@@ -1,0 +1,32 @@
+---
+layout: index
+title: Photos
+theme: dark
+landing: true
+---
+{% assign galleries = site.galleries | sort:"date" %}
+{% for item in galleries %}
+    {% assign this_year = item.date | date:"%Y" %}
+
+    {% if this_year != year %}
+        {% unless forloop.first %}
+    </div>
+</section>
+        {% endunless %}
+
+<section class="c-section" aria-labelledby="year-{{ this_year }}">
+    <header class="c-section__header">
+        <h1 class="c-section__title" id="year-{{ this_year }}">{{ this_year }}</h1>
+    </header>
+
+    <div class="c-section__main u-triad">
+        {% assign year = this_year %}
+    {% endif %}
+
+        {% include item/gallery.html %}
+
+    {% if forloop.last %}
+    </div>
+</section>
+    {% endif %}
+{% endfor %}
