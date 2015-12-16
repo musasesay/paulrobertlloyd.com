@@ -1,6 +1,7 @@
 # TODO: Fix needing to run twice: once to write data, then again to read it
 # TODO: Add means of only displaying certain images from set (using tags?)
 # TODO: Add initial auth setup for FlickRaw
+# TODO: Allow list of photosets to be generated to be listed in site config
 
 require 'flickraw'
 
