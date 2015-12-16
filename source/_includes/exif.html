@@ -9,25 +9,35 @@
             </time>
         </dd>
         {% endif %}
+        {% if photo.model %}
         <dt class="c-exif__title u-hidden">Model</dt>
         <dd class="c-exif__value c-exif__value--model" title="Model">
             {{ photo.model }}
         </dd>
+        {% endif %}
+        {% if photo.f_number %}
         <dt class="c-exif__title u-hidden">Aperture</dt>
         <dd class="c-exif__value c-exif__value--f-number" title="Aperture">
             <i>f</i>/{{ photo.f_number }}
         </dd>
+        {% endif %}
+        {% if photo.exposure_time %}
         <dt class="c-exif__title u-hidden">Exposure</dt>
         <dd class="c-exif__value c-exif__value--exposure-time" title="Exposure">
             {{ photo.exposure_time }}
         </dd>
+        {% endif %}
+        {% if photo.iso %}
         <dt class="c-exif__title u-hidden">Film speed</dt>
         <dd class="c-exif__value c-exif__value--iso-speed-ratings" title="Film speed">
             <abbr title="International Organization for Standardization ">ISO</abbr>{{ photo.iso }}
         </dd>
+        {% endif %}
+        {% if photo.focal_length %}
         <dt class="c-exif__title u-hidden">Focal Length</dt>
         <dd class="c-exif__value c-exif__value--focal-length" title="Focal Length">
             {{ photo.focal_length }}
         </dd>
+        {% endif %}
     </dl>
 </div>

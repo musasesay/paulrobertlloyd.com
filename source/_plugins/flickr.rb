@@ -1,4 +1,5 @@
-# TODO: Fix needing to run twice: once to write data, again to read
+# TODO: Fix needing to run twice: once to write data, then again to read it
+# TODO: Add means of only displaying certain images from set (using tags?)
 
 require 'flickraw'
 
@@ -36,31 +37,25 @@ module Jekyll
             if !Dir.exist?(data_dir)
               puts "Creating folder to save site data in"
               Dir.mkdir(data_dir, 0777)
-            else
-              puts "Data folder already exists"
             end
 
             # Write _data/photosets folder, if doesn’t exist
             if !Dir.exist?(photosets_dir)
               puts "Creating folder to save photoset data in"
               Dir.mkdir(photosets_dir, 0777)
-            else
-              puts "Photoset data folder already exists"
             end
 
-            # Write photoset data
+            # Write photoset data, if doesn't exist
             path = File.join(photosets_dir, "#{@photoset}.yml")
 
-            # if File.exist?(path)
-            #   puts "Reading data for photoset #{@photoset}"
-            #   photos = YAML::load(File.read(path))
-            # else
+            if !File.exist?(path)
               puts "Writing data for photoset #{@photoset}"
               photos = generate_photo_data(@photoset, @config)
               File.open(path, 'w') { |f| f.print(YAML::dump(photos)) }
-            # end
+            end
           end
         end
+
       end
 
 
