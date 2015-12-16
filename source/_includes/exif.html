@@ -1,11 +1,11 @@
 <div class="c-exif">
     <h2 class="c-exif__title">{{ photo.title }}</h2>
     <dl class="c-exif__values">
-        {% if photo.date_created %}
+        {% if photo.date %}
         <dt class="c-exif__title u-hidden">Date taken</dt>
         <dd class="c-exif__value c-exif__value--date-created" title="Date taken">
-            <time datetime="{{ photo.date_created | date_to_xmlschema }}">
-                {{ photo.date_created | date:"%e %B %Y" }}
+            <time datetime="{{ photo.date | date_to_xmlschema }}">
+                {{ photo.date | date:"%e %B %Y" }}
             </time>
         </dd>
         {% endif %}

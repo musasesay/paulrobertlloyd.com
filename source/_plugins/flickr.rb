@@ -1,3 +1,5 @@
+# TODO: Fix needing to run twice: once to write data, again to read
+
 require 'flickraw'
 
 module Jekyll
@@ -49,14 +51,14 @@ module Jekyll
             # Write photoset data
             path = File.join(photosets_dir, "#{@photoset}.yml")
 
-            if File.exist?(path)
-              puts "Reading data for photoset #{@photoset}"
-              photos = YAML::load(File.read(path))
-            else
+            # if File.exist?(path)
+            #   puts "Reading data for photoset #{@photoset}"
+            #   photos = YAML::load(File.read(path))
+            # else
               puts "Writing data for photoset #{@photoset}"
               photos = generate_photo_data(@photoset, @config)
               File.open(path, 'w') { |f| f.print(YAML::dump(photos)) }
-            end
+            # end
           end
         end
       end
@@ -83,11 +85,12 @@ module Jekyll
         end
 
         photos.photo.each_index do | i |
-          id    = photos.photo[i].id
-          title = photos.photo[i].title
+          id            = photos.photo[i].id
 
-          # TODO: Get date from flickr.photos.getInfo, not flickr.photos.getExif
-          date_created  = exif.find { |e| e.tag == "CreateDate" }
+          info          = flickr.photos.getInfo(:photo_id => id)
+          title         = info.title
+          date          = info.dates.taken
+          media         = info.media
 
           exif          = flickr.photos.getExif(:photo_id => id).exif.to_a
           model         = exif.find { |e| e.tag == "Model"}
@@ -96,27 +99,39 @@ module Jekyll
           iso           = exif.find { |e| e.tag == "ISO" }
           focal_length  = exif.find { |e| e.tag == "FocalLength" }
 
-          sizes         = flickr.photos.getSizes(:photo_id => id)
-          urlThumb      = sizes.find { |s| s.label == "Large Square" }
-          urlEmbeded    = sizes.find { |s| s.label == "Medium 800" }
-          urlOpened     = sizes.find { |s| s.label == "Large" }
-          urlVideo      = sizes.find { |s| s.label == "Site MP4" }
+          sources       = flickr.photos.getSizes(:photo_id => id)
+          small         = sources.find { |s| s.label == "Medium" }
+          medium        = sources.find { |s| s.label == "Medium 800" }
+          large         = sources.find { |s| s.label == "Large" }
+          original      = sources.find { |s| s.label == "Original" }
+          video         = sources.find { |s| s.label == "Site MP4" }
 
-          # TODO: Don't output YAML key if has no value
-          photo = {
-            'id' => id,
-            'title' => title,
-            'date_created' => date_created ? date_created.raw.gsub!(/(\d{4}):(\d{2}):(\d{2}) (\d{2}:\d{2}:\d{2})/, '\\1-\\2-\\3 \\4') : nil,
-            'model' => model ? model.raw : nil,
-            'f_number' => f_number ? f_number.raw : nil,
-            'exposure_time' => exposure_time ? exposure_time.raw : nil,
-            'iso' => iso ? iso.raw : nil,
-            'focal_length' => focal_length ? focal_length.raw : nil,
-            'urlThumb' => urlThumb ? urlThumb.source : nil,
-            'urlEmbeded' => urlEmbeded ? urlEmbeded.source : nil,
-            'urlOpened' => urlOpened ? urlOpened.source : nil,
-            'urlVideo' => urlVideo ? urlVideo.source : nil,
-          }
+          if media == 'photo'
+            photo = {
+              'title' => title,
+              'date' => date ? date : nil,
+              'model' => model ? model.raw : nil,
+              'f_number' => f_number ? f_number.raw : nil,
+              'exposure_time' => exposure_time ? exposure_time.raw : nil,
+              'iso' => iso ? iso.raw : nil,
+              'focal_length' => focal_length ? focal_length.raw : nil,
+              'src' => {
+                'small' => small ? small.source : nil,
+                'medium' => medium ? medium.source : nil,
+                'large' => large ? large.source : nil,
+                'original' => original ? original.source : nil
+              }
+            }
+          else
+            photo = {
+              'title' => title,
+              'date' => date ? date : nil,
+              'src' => {
+                'poster' => medium ? medium.source : nil,
+                'video' => video ? video.source : nil
+              }
+            }
+          end
 
           returnSet.push photo
         end

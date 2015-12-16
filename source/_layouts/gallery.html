@@ -12,12 +12,12 @@ layout: default
 
             {% for photo in site.data.photosets[page.photoset] %}
             <figure class="u-extend">
-                {% if photo.urlVideo != null %}
-                <video controls poster="{{ photo.urlEmbeded }}">
-                    <source src="{{ photo.urlVideo }}" type="video/mp4"/>
+                {% if photo.src.video %}
+                <video controls poster="{{ photo.src.poster }}">
+                    <source src="{{ photo.src.video }}" type="video/mp4"/>
                 </video>
                 {% else %}
-                <img src="{{ photo.urlEmbeded }}" alt=""/>
+                <img src="{{ photo.src.large }}" alt="" data-full="{{ photo.src.original }}"/>
                 {% endif %}
                 <figcaption>
                     {% include exif.html %}
