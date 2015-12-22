@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="{% asset_path photoswipe.css %}"/>
+<script src="{% asset_path photoswipe.js %}"></script>
+
 <article class="c-page  h-entry">
     {% include page/header.html %}
 
@@ -17,8 +20,8 @@ layout: default
                     <source src="{{ photo.video.src }}" type="video/mp4"/>
                 </video>
                 {% else %}
-                <a href="{{ photo.original.src }}">
-                    <img src="{{ photo.large.src }}" alt="" data-size="{{ photo.original.width }}x{{ photo.original.height }}"/>
+                <a href="{{ photo.original.src }}" data-size="{{ photo.original.width }}x{{ photo.original.height }}">
+                    <img src="{{ photo.large.src }}" alt=""/>
                 </a>
                 {% endif %}
                 <figcaption>
@@ -28,6 +31,8 @@ layout: default
             {% endfor %}
         </div>
     </div>
+
+    {% include pswp.html %}
 
     {% include page/section--series.html %}
 

@@ -13,3 +13,6 @@
 [submodule "source/_assets/javascripts/vendor/what-input"]
 	path = source/_assets/javascripts/vendor/what-input
 	url = git@github.com:ten1seven/what-input.git
+[submodule "source/_assets/javascripts/vendor/PhotoSwipe"]
+	path = source/_assets/javascripts/vendor/PhotoSwipe
+	url = https://github.com/dimsemenov/PhotoSwipe.git
