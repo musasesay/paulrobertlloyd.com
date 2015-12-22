@@ -110,22 +110,36 @@ module Jekyll
               'model' => model ? model.raw : nil,
               'f_number' => f_number ? f_number.raw : nil,
               'exposure_time' => exposure_time ? exposure_time.raw : nil,
-              'iso' => iso ? iso.raw : nil,
+              'iso' => iso ? iso.raw.to_i : nil,
               'focal_length' => focal_length ? focal_length.raw : nil,
-              'src' => {
-                'small' => small ? small.source : nil,
-                'medium' => medium ? medium.source : nil,
-                'large' => large ? large.source : nil,
-                'original' => original ? original.source : nil
-              }
+              'small' => small ? {
+                'src' => small.source,
+                'height' => small.height.to_i,
+                'width' => small.width.to_i
+              } : nil,
+              'medium' => medium ? {
+                'src' => medium.source,
+                'height' => medium.height.to_i,
+                'width' => medium.width.to_i
+              } : nil,
+              'large' => large ? {
+                'src' => large.source,
+                'height' => large.height.to_i,
+                'width' => large.width.to_i
+              } : nil,
+              'original' => original ? {
+                'src' => original.source,
+                'height' => original.height.to_i,
+                'width' => original.width.to_i
+              } : nil
             }
           else
             photo = {
               'title' => title,
               'date' => date ? date : nil,
-              'src' => {
-                'poster' => medium ? medium.source : nil,
-                'video' => video ? video.source : nil
+              'video' => {
+                'src' => video ? video.source : nil,
+                'poster' => medium ? medium.source : nil
               }
             }
           end

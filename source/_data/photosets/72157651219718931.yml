@@ -4,531 +4,1015 @@
   model: Canon EOS 450D
   f_number: '4.0'
   exposure_time: 1/6
-  iso: '100'
+  iso: 100
   focal_length: 24.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8616/16721990496_bf09ed91f9.jpg
-    medium: https://farm9.staticflickr.com/8616/16721990496_bf09ed91f9_c.jpg
-    large: https://farm9.staticflickr.com/8616/16721990496_bf09ed91f9_b.jpg
-    original: https://farm9.staticflickr.com/8616/16721990496_20c0bc5f2c_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8616/16721990496_bf09ed91f9.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8616/16721990496_bf09ed91f9_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8616/16721990496_bf09ed91f9_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8616/16721990496_20c0bc5f2c_o.jpg
+    height: 2848
+    width: 4272
 - title: Berlin Siegessäule (Victory Column)
   date: '2015-02-23 16:25:20'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/30
-  iso: '200'
+  iso: 200
   focal_length: 29.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8683/16561783929_59756cd762.jpg
-    medium: https://farm9.staticflickr.com/8683/16561783929_59756cd762_c.jpg
-    large: https://farm9.staticflickr.com/8683/16561783929_59756cd762_b.jpg
-    original: https://farm9.staticflickr.com/8683/16561783929_68a0302640_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8683/16561783929_59756cd762.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8683/16561783929_59756cd762_c.jpg
+    height: 800
+    width: 533
+  large:
+    src: https://farm9.staticflickr.com/8683/16561783929_59756cd762_b.jpg
+    height: 1024
+    width: 682
+  original:
+    src: https://farm9.staticflickr.com/8683/16561783929_68a0302640_o.jpg
+    height: 3737
+    width: 2490
 - title: Roon
   date: '2015-02-23 16:26:40'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/25
-  iso: '400'
+  iso: 400
   focal_length: 23.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8611/16561800619_419bd5f533.jpg
-    medium: https://farm9.staticflickr.com/8611/16561800619_419bd5f533_c.jpg
-    large: https://farm9.staticflickr.com/8611/16561800619_419bd5f533_b.jpg
-    original: https://farm9.staticflickr.com/8611/16561800619_491746f761_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8611/16561800619_419bd5f533.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8611/16561800619_419bd5f533_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm9.staticflickr.com/8611/16561800619_419bd5f533_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm9.staticflickr.com/8611/16561800619_491746f761_o.jpg
+    height: 3614
+    width: 2410
 - title: Moltre
   date: '2015-02-23 16:28:47'
   model: Canon EOS 450D
   f_number: '4.0'
   exposure_time: 1/40
-  iso: '200'
+  iso: 200
   focal_length: 23.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7637/16546427147_14a467935f.jpg
-    medium: https://farm8.staticflickr.com/7637/16546427147_14a467935f_c.jpg
-    large: https://farm8.staticflickr.com/7637/16546427147_14a467935f_b.jpg
-    original: https://farm8.staticflickr.com/7637/16546427147_aec4bd665d_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7637/16546427147_14a467935f.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7637/16546427147_14a467935f_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7637/16546427147_14a467935f_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7637/16546427147_aec4bd665d_o.jpg
+    height: 3885
+    width: 2590
 - title: Tank and Rose
   date: '2015-02-23 16:49:00'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/30
-  iso: '200'
+  iso: 200
   focal_length: 18.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7643/16561821679_c7438bd9c9.jpg
-    medium: https://farm8.staticflickr.com/7643/16561821679_c7438bd9c9_c.jpg
-    large: https://farm8.staticflickr.com/7643/16561821679_c7438bd9c9_b.jpg
-    original: https://farm8.staticflickr.com/7643/16561821679_b2b2872fa7_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7643/16561821679_c7438bd9c9.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7643/16561821679_c7438bd9c9_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7643/16561821679_c7438bd9c9_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7643/16561821679_b2b2872fa7_o.jpg
+    height: 3897
+    width: 2598
 - title: Brandenburg Gate
   date: '2015-02-23 17:08:52'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/25
-  iso: '400'
+  iso: 400
   focal_length: 23.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8588/16746755481_341c966e69.jpg
-    medium: https://farm9.staticflickr.com/8588/16746755481_341c966e69_c.jpg
-    large: https://farm9.staticflickr.com/8588/16746755481_341c966e69_b.jpg
-    original: https://farm9.staticflickr.com/8588/16746755481_6957191f61_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8588/16746755481_341c966e69.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8588/16746755481_341c966e69_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8588/16746755481_341c966e69_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8588/16746755481_6957191f61_o.jpg
+    height: 2786
+    width: 4179
 - title: Brandenburg Gate
   date: '2015-02-23 17:09:21'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/50
-  iso: '800'
+  iso: 800
   focal_length: 41.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8629/16560392538_40a45b7479.jpg
-    medium: https://farm9.staticflickr.com/8629/16560392538_40a45b7479_c.jpg
-    large: https://farm9.staticflickr.com/8629/16560392538_40a45b7479_b.jpg
-    original: https://farm9.staticflickr.com/8629/16560392538_ed89bbd102_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8629/16560392538_40a45b7479.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8629/16560392538_40a45b7479_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8629/16560392538_40a45b7479_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8629/16560392538_ed89bbd102_o.jpg
+    height: 2806
+    width: 4209
 - title: You Are Entering the American Sector
   date: '2015-02-23 17:26:36'
   model: Canon EOS 450D
   f_number: '4.0'
   exposure_time: 1/13
-  iso: '800'
+  iso: 800
   focal_length: 28.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8673/16125650184_37e6353ed1.jpg
-    medium: https://farm9.staticflickr.com/8673/16125650184_37e6353ed1_c.jpg
-    large: https://farm9.staticflickr.com/8673/16125650184_37e6353ed1_b.jpg
-    original: https://farm9.staticflickr.com/8673/16125650184_591193b388_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8673/16125650184_37e6353ed1.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8673/16125650184_37e6353ed1_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8673/16125650184_37e6353ed1_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8673/16125650184_591193b388_o.jpg
+    height: 2548
+    width: 3568
 - title: DDR
   date: '2015-02-23 17:30:35'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/8
-  iso: '800'
+  iso: 800
   focal_length: 39.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7615/16746902352_392dfb55cd.jpg
-    medium: https://farm8.staticflickr.com/7615/16746902352_392dfb55cd_c.jpg
-    large: https://farm8.staticflickr.com/7615/16746902352_392dfb55cd_b.jpg
-    original: https://farm8.staticflickr.com/7615/16746902352_7ef7994e58_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7615/16746902352_392dfb55cd.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7615/16746902352_392dfb55cd_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7615/16746902352_392dfb55cd_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7615/16746902352_7ef7994e58_o.jpg
+    height: 3912
+    width: 2608
 - title: Brandenburg Gate
   date: '2015-02-23 17:37:35'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/10
-  iso: '400'
+  iso: 400
   focal_length: 24.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7612/16128053283_2776f043c2.jpg
-    medium: https://farm8.staticflickr.com/7612/16128053283_2776f043c2_c.jpg
-    large: https://farm8.staticflickr.com/7612/16128053283_2776f043c2_b.jpg
-    original: https://farm8.staticflickr.com/7612/16128053283_f7f90232e1_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7612/16128053283_2776f043c2.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7612/16128053283_2776f043c2_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7612/16128053283_2776f043c2_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7612/16128053283_f7f90232e1_o.jpg
+    height: 2765
+    width: 4147
 - title: Brandenburg Gate
   date: '2015-02-23 17:38:34'
   model: Canon EOS 450D
   f_number: '5.6'
   exposure_time: 1/13
-  iso: '400'
+  iso: 400
   focal_length: 47.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8589/16746831341_95d949eab2.jpg
-    medium: https://farm9.staticflickr.com/8589/16746831341_95d949eab2_c.jpg
-    large: https://farm9.staticflickr.com/8589/16746831341_95d949eab2_b.jpg
-    original: https://farm9.staticflickr.com/8589/16746831341_b5fd89e753_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8589/16746831341_95d949eab2.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8589/16746831341_95d949eab2_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8589/16746831341_95d949eab2_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8589/16746831341_b5fd89e753_o.jpg
+    height: 2728
+    width: 4091
 - title: S-Bahn
   date: '2015-02-23 17:40:40'
   model: Canon EOS 450D
   f_number: '6.3'
   exposure_time: 1/60
-  iso: '400'
+  iso: 400
   focal_length: 49.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7633/16540760477_69e1398452.jpg
-    medium: https://farm8.staticflickr.com/7633/16540760477_69e1398452_c.jpg
-    large: https://farm8.staticflickr.com/7633/16540760477_69e1398452_b.jpg
-    original: https://farm8.staticflickr.com/7633/16540760477_9272372407_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7633/16540760477_69e1398452.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7633/16540760477_69e1398452_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7633/16540760477_69e1398452_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7633/16540760477_9272372407_o.jpg
+    height: 2909
+    width: 1939
 - title: Inside Berlin Hauptbahnhof
   date: '2015-02-23 18:19:36'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/30
-  iso: '800'
+  iso: 800
   focal_length: 18.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7602/16722141616_7d156b53b9.jpg
-    medium: https://farm8.staticflickr.com/7602/16722141616_7d156b53b9_c.jpg
-    large: https://farm8.staticflickr.com/7602/16722141616_7d156b53b9_b.jpg
-    original: https://farm8.staticflickr.com/7602/16722141616_e3725cc3a8_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7602/16722141616_7d156b53b9.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7602/16722141616_7d156b53b9_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7602/16722141616_7d156b53b9_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7602/16722141616_e3725cc3a8_o.jpg
+    height: 3947
+    width: 2632
 - title: Kaiser Wilhelm Memorial Church
   date: '2015-02-24 11:55:17'
   model: Canon EOS 450D
   f_number: '7.1'
   exposure_time: 1/125
-  iso: '200'
+  iso: 200
   focal_length: 21.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7614/16746859221_1c57c1a4d3.jpg
-    medium: https://farm8.staticflickr.com/7614/16746859221_1c57c1a4d3_c.jpg
-    large: https://farm8.staticflickr.com/7614/16746859221_1c57c1a4d3_b.jpg
-    original: https://farm8.staticflickr.com/7614/16746859221_4234d1f79c_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7614/16746859221_1c57c1a4d3.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7614/16746859221_1c57c1a4d3_c.jpg
+    height: 800
+    width: 533
+  large:
+    src: https://farm8.staticflickr.com/7614/16746859221_1c57c1a4d3_b.jpg
+    height: 1024
+    width: 682
+  original:
+    src: https://farm8.staticflickr.com/7614/16746859221_4234d1f79c_o.jpg
+    height: 3145
+    width: 2095
 - title: Berlin Architecture
   date: '2015-02-24 15:18:39'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/50
-  iso: '200'
+  iso: 200
   focal_length: 24.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8621/16560663030_63551a4940.jpg
-    medium: https://farm9.staticflickr.com/8621/16560663030_63551a4940_c.jpg
-    large: https://farm9.staticflickr.com/8621/16560663030_63551a4940_b.jpg
-    original: https://farm9.staticflickr.com/8621/16560663030_9ae2c0fc52_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8621/16560663030_63551a4940.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8621/16560663030_63551a4940_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm9.staticflickr.com/8621/16560663030_63551a4940_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm9.staticflickr.com/8621/16560663030_9ae2c0fc52_o.jpg
+    height: 4241
+    width: 2828
 - title: Looking Towards Museumsinsel (Museum Island)
   date: '2015-02-24 16:01:56'
   model: Canon EOS 450D
   f_number: '5.6'
   exposure_time: 1/50
-  iso: '200'
+  iso: 200
   focal_length: 35.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7606/16722176176_eb60b760e9.jpg
-    medium: https://farm8.staticflickr.com/7606/16722176176_eb60b760e9_c.jpg
-    large: https://farm8.staticflickr.com/7606/16722176176_eb60b760e9_b.jpg
-    original: https://farm8.staticflickr.com/7606/16722176176_dd5b78f3b1_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7606/16722176176_eb60b760e9.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7606/16722176176_eb60b760e9_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7606/16722176176_eb60b760e9_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7606/16722176176_dd5b78f3b1_o.jpg
+    height: 2523
+    width: 3783
 - title: Berlin Street
   date: '2015-02-24 16:03:42'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/30
-  iso: '200'
+  iso: 200
   focal_length: 20.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7288/16722193206_8d9aef6ca8.jpg
-    medium: https://farm8.staticflickr.com/7288/16722193206_8d9aef6ca8_c.jpg
-    large: https://farm8.staticflickr.com/7288/16722193206_8d9aef6ca8_b.jpg
-    original: https://farm8.staticflickr.com/7288/16722193206_11eb572bbf_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7288/16722193206_8d9aef6ca8.jpg
+    height: 375
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7288/16722193206_8d9aef6ca8_c.jpg
+    height: 600
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7288/16722193206_8d9aef6ca8_b.jpg
+    height: 768
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7288/16722193206_11eb572bbf_o.jpg
+    height: 2824
+    width: 3765
 - title: Berlin Wall
   date: '2015-02-24 16:22:52'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/30
-  iso: '400'
+  iso: 400
   focal_length: 34.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8641/16722229946_7c1bc9c309.jpg
-    medium: https://farm9.staticflickr.com/8641/16722229946_7c1bc9c309_c.jpg
-    large: https://farm9.staticflickr.com/8641/16722229946_7c1bc9c309_b.jpg
-    original: https://farm9.staticflickr.com/8641/16722229946_1234bfbae9_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8641/16722229946_7c1bc9c309.jpg
+    height: 282
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8641/16722229946_7c1bc9c309_c.jpg
+    height: 451
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8641/16722229946_7c1bc9c309_b.jpg
+    height: 577
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8641/16722229946_1234bfbae9_o.jpg
+    height: 2300
+    width: 4083
 - title: Berlin Wall
   date: '2015-02-24 16:24:38'
   model: Canon EOS 450D
   f_number: '4.5'
   exposure_time: 1/40
-  iso: '400'
+  iso: 400
   focal_length: 24.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8621/16546461987_a900d47d1d.jpg
-    medium: https://farm9.staticflickr.com/8621/16546461987_a900d47d1d_c.jpg
-    large: https://farm9.staticflickr.com/8621/16546461987_a900d47d1d_b.jpg
-    original: https://farm9.staticflickr.com/8621/16546461987_74da551e53_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8621/16546461987_a900d47d1d.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8621/16546461987_a900d47d1d_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8621/16546461987_a900d47d1d_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8621/16546461987_74da551e53_o.jpg
+    height: 2848
+    width: 4272
 - title: DB Offices on Site of Berlin Wall
   date: '2015-02-24 16:26:43'
   model: Canon EOS 450D
   f_number: '4.0'
   exposure_time: 1/50
-  iso: '400'
+  iso: 400
   focal_length: 18.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7596/16752589621_fb022431b1.jpg
-    medium: https://farm8.staticflickr.com/7596/16752589621_fb022431b1_c.jpg
-    large: https://farm8.staticflickr.com/7596/16752589621_fb022431b1_b.jpg
-    original: https://farm8.staticflickr.com/7596/16752589621_8552bb63e4_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7596/16752589621_fb022431b1.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7596/16752589621_fb022431b1_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7596/16752589621_fb022431b1_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7596/16752589621_8552bb63e4_o.jpg
+    height: 2728
+    width: 4092
 - title: Denkmal
   date: '2015-02-24 16:29:54'
   model: Canon EOS 450D
   f_number: '4.5'
   exposure_time: 1/15
-  iso: '400'
+  iso: 400
   focal_length: 33.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7650/16566241378_64977a77dd.jpg
-    medium: https://farm8.staticflickr.com/7650/16566241378_64977a77dd_c.jpg
-    large: https://farm8.staticflickr.com/7650/16566241378_64977a77dd_b.jpg
-    original: https://farm8.staticflickr.com/7650/16566241378_b77cfd0687_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7650/16566241378_64977a77dd.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7650/16566241378_64977a77dd_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7650/16566241378_64977a77dd_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7650/16566241378_b77cfd0687_o.jpg
+    height: 2780
+    width: 4170
 - title: Berlin Wall, Bernauer Straße
   date: '2015-02-24 16:32:19'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/30
-  iso: '400'
+  iso: 400
   focal_length: 21.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8602/16560781480_17e788859d.jpg
-    medium: https://farm9.staticflickr.com/8602/16560781480_17e788859d_c.jpg
-    large: https://farm9.staticflickr.com/8602/16560781480_17e788859d_b.jpg
-    original: https://farm9.staticflickr.com/8602/16560781480_4890d7fe4d_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8602/16560781480_17e788859d.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8602/16560781480_17e788859d_c.jpg
+    height: 533
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8602/16560781480_17e788859d_b.jpg
+    height: 682
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8602/16560781480_4890d7fe4d_o.jpg
+    height: 2680
+    width: 4021
 - title: Berlin Wall, Bernauer Straße
   date: '2015-02-24 16:36:12'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/10
-  iso: '400'
+  iso: 400
   focal_length: 21.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7622/16128249113_8f62d1ea30.jpg
-    medium: https://farm8.staticflickr.com/7622/16128249113_8f62d1ea30_c.jpg
-    large: https://farm8.staticflickr.com/7622/16128249113_8f62d1ea30_b.jpg
-    original: https://farm8.staticflickr.com/7622/16128249113_a06b6238f6_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7622/16128249113_8f62d1ea30.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7622/16128249113_8f62d1ea30_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7622/16128249113_8f62d1ea30_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7622/16128249113_a06b6238f6_o.jpg
+    height: 4272
+    width: 2848
 - title: Restored Section of Berlin Wall, Bernauer Straße
   date: '2015-02-24 16:41:51'
   model: Canon EOS 450D
   f_number: '4.5'
   exposure_time: 1/6
-  iso: '800'
+  iso: 800
   focal_length: 29.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8586/16748219295_03eed4c190.jpg
-    medium: https://farm9.staticflickr.com/8586/16748219295_03eed4c190_c.jpg
-    large: https://farm9.staticflickr.com/8586/16748219295_03eed4c190_b.jpg
-    original: https://farm9.staticflickr.com/8586/16748219295_e92a9bacee_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8586/16748219295_03eed4c190.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8586/16748219295_03eed4c190_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8586/16748219295_03eed4c190_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8586/16748219295_e92a9bacee_o.jpg
+    height: 2405
+    width: 3607
 - title: Berlin Wall Memorial and Documentation Center
   date: '2015-02-24 16:54:39'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/25
-  iso: '500'
+  iso: 500
   focal_length: 18.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8641/16562130579_bd3217dc1c.jpg
-    medium: https://farm9.staticflickr.com/8641/16562130579_bd3217dc1c_c.jpg
-    large: https://farm9.staticflickr.com/8641/16562130579_bd3217dc1c_b.jpg
-    original: https://farm9.staticflickr.com/8641/16562130579_8b5b015fe6_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8641/16562130579_bd3217dc1c.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8641/16562130579_bd3217dc1c_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm9.staticflickr.com/8641/16562130579_bd3217dc1c_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm9.staticflickr.com/8641/16562130579_8b5b015fe6_o.jpg
+    height: 4091
+    width: 2728
 - title: Chapel of Reconcilliation, Bernauer Straße
   date: '2015-02-24 17:05:17'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: '0.5'
-  iso: '800'
+  iso: 800
   focal_length: 18.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7643/16562141629_8d8d39451d.jpg
-    medium: https://farm8.staticflickr.com/7643/16562141629_8d8d39451d_c.jpg
-    large: https://farm8.staticflickr.com/7643/16562141629_8d8d39451d_b.jpg
-    original: https://farm8.staticflickr.com/7643/16562141629_b1ce8d6067_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7643/16562141629_8d8d39451d.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7643/16562141629_8d8d39451d_c.jpg
+    height: 533
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7643/16562141629_8d8d39451d_b.jpg
+    height: 682
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7643/16562141629_b1ce8d6067_o.jpg
+    height: 2665
+    width: 4004
 - title: Bikes near Turmstraße
   date: '2015-02-25 11:10:06'
   model: Canon EOS 450D
   f_number: '5.6'
   exposure_time: 1/400
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7611/16125956414_be6c86c5dc.jpg
-    medium: https://farm8.staticflickr.com/7611/16125956414_be6c86c5dc_c.jpg
-    large: https://farm8.staticflickr.com/7611/16125956414_be6c86c5dc_b.jpg
-    original: https://farm8.staticflickr.com/7611/16125956414_eaede8d600_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7611/16125956414_be6c86c5dc.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7611/16125956414_be6c86c5dc_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7611/16125956414_be6c86c5dc_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7611/16125956414_eaede8d600_o.jpg
+    height: 4272
+    width: 2848
 - title: U5
   date: '2015-02-25 11:42:39'
   model: Canon EOS 450D
   f_number: '2.5'
   exposure_time: 1/80
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8648/16125967024_9c367bfa57.jpg
-    medium: https://farm9.staticflickr.com/8648/16125967024_9c367bfa57_c.jpg
-    large: https://farm9.staticflickr.com/8648/16125967024_9c367bfa57_b.jpg
-    original: https://farm9.staticflickr.com/8648/16125967024_276dd238f7_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8648/16125967024_9c367bfa57.jpg
+    height: 281
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8648/16125967024_9c367bfa57_c.jpg
+    height: 450
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8648/16125967024_9c367bfa57_b.jpg
+    height: 576
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8648/16125967024_276dd238f7_o.jpg
+    height: 2088
+    width: 3714
 - title: Alexanderplatz
   date: '2015-02-25 11:45:00'
   model: Canon EOS 450D
   f_number: '4.5'
   exposure_time: 1/250
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7283/16128342583_30f73a7fd0.jpg
-    medium: https://farm8.staticflickr.com/7283/16128342583_30f73a7fd0_c.jpg
-    large: https://farm8.staticflickr.com/7283/16128342583_30f73a7fd0_b.jpg
-    original: https://farm8.staticflickr.com/7283/16128342583_78d54dd2fd_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7283/16128342583_30f73a7fd0.jpg
+    height: 333
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7283/16128342583_30f73a7fd0_c.jpg
+    height: 534
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7283/16128342583_30f73a7fd0_b.jpg
+    height: 683
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7283/16128342583_78d54dd2fd_o.jpg
+    height: 2483
+    width: 3724
 - title: Buskers
   date: '2015-02-25 11:48:06'
   model: Canon EOS 450D
   f_number: '3.5'
   exposure_time: 1/200
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8615/16748302175_c23f3fd40a.jpg
-    medium: https://farm9.staticflickr.com/8615/16748302175_c23f3fd40a_c.jpg
-    large: https://farm9.staticflickr.com/8615/16748302175_c23f3fd40a_b.jpg
-    original: https://farm9.staticflickr.com/8615/16748302175_c7030169a7_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8615/16748302175_c23f3fd40a.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8615/16748302175_c23f3fd40a_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8615/16748302175_c23f3fd40a_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8615/16748302175_c7030169a7_o.jpg
+    height: 2601
+    width: 3643
 - title: Berlin Fernsehturm (Television Tower)
   date: '2015-02-25 12:29:46'
   model: Canon EOS 450D
   f_number: '7.1'
   exposure_time: 1/800
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8682/16541057597_b2d26ba6b4.jpg
-    medium: https://farm9.staticflickr.com/8682/16541057597_b2d26ba6b4_c.jpg
-    large: https://farm9.staticflickr.com/8682/16541057597_b2d26ba6b4_b.jpg
-    original: https://farm9.staticflickr.com/8682/16541057597_d46fa43cc8_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8682/16541057597_b2d26ba6b4.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8682/16541057597_b2d26ba6b4_c.jpg
+    height: 800
+    width: 533
+  large:
+    src: https://farm9.staticflickr.com/8682/16541057597_b2d26ba6b4_b.jpg
+    height: 1024
+    width: 682
+  original:
+    src: https://farm9.staticflickr.com/8682/16541057597_d46fa43cc8_o.jpg
+    height: 4082
+    width: 2720
 - title: St. Mary’s Church and Fernsehturm
   date: '2015-02-25 12:39:20'
   model: Canon EOS 450D
   f_number: '8.0'
   exposure_time: 1/800
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7624/16722452286_a800b443b2.jpg
-    medium: https://farm8.staticflickr.com/7624/16722452286_a800b443b2_c.jpg
-    large: https://farm8.staticflickr.com/7624/16722452286_a800b443b2_b.jpg
-    original: https://farm8.staticflickr.com/7624/16722452286_8e6fffb035_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7624/16722452286_a800b443b2.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7624/16722452286_a800b443b2_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7624/16722452286_a800b443b2_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7624/16722452286_8e6fffb035_o.jpg
+    height: 4206
+    width: 2804
 - title: Karl Marx and Friedrich Engels
   date: '2015-02-25 12:45:14'
   model: Canon EOS 450D
   f_number: '5.6'
   exposure_time: 1/400
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7593/16562262849_478fac4e6a.jpg
-    medium: https://farm8.staticflickr.com/7593/16562262849_478fac4e6a_c.jpg
-    large: https://farm8.staticflickr.com/7593/16562262849_478fac4e6a_b.jpg
-    original: https://farm8.staticflickr.com/7593/16562262849_b1360c8c22_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7593/16562262849_478fac4e6a.jpg
+    height: 500
+    width: 357
+  medium:
+    src: https://farm8.staticflickr.com/7593/16562262849_478fac4e6a_c.jpg
+    height: 800
+    width: 572
+  large:
+    src: https://farm8.staticflickr.com/7593/16562262849_478fac4e6a_b.jpg
+    height: 1024
+    width: 732
+  original:
+    src: https://farm8.staticflickr.com/7593/16562262849_b1360c8c22_o.jpg
+    height: 3481
+    width: 2488
 - title: Berliner Dom
   date: '2015-02-25 12:46:49'
   model: Canon EOS 450D
   f_number: '7.1'
   exposure_time: 1/800
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8616/16722497836_f68396dc05.jpg
-    medium: https://farm9.staticflickr.com/8616/16722497836_f68396dc05_c.jpg
-    large: https://farm9.staticflickr.com/8616/16722497836_f68396dc05_b.jpg
-    original: https://farm9.staticflickr.com/8616/16722497836_9668b70e58_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8616/16722497836_f68396dc05.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8616/16722497836_f68396dc05_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm9.staticflickr.com/8616/16722497836_f68396dc05_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm9.staticflickr.com/8616/16722497836_9668b70e58_o.jpg
+    height: 4202
+    width: 2802
 - title: Cyclist
   date: '2015-02-25 12:47:04'
   model: Canon EOS 450D
   f_number: '6.3'
   exposure_time: 1/500
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7629/16561016750_5c474fc9d4.jpg
-    medium: https://farm8.staticflickr.com/7629/16561016750_5c474fc9d4_c.jpg
-    large: https://farm8.staticflickr.com/7629/16561016750_5c474fc9d4_b.jpg
-    original: https://farm8.staticflickr.com/7629/16561016750_a732e5a72b_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7629/16561016750_5c474fc9d4.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7629/16561016750_5c474fc9d4_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7629/16561016750_5c474fc9d4_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7629/16561016750_a732e5a72b_o.jpg
+    height: 2692
+    width: 3771
 - title: Bode Museum
   date: '2015-02-25 13:03:53'
   model: Canon EOS 450D
   f_number: '8.0'
   exposure_time: 1/800
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7616/16748437585_cac248a169.jpg
-    medium: https://farm8.staticflickr.com/7616/16748437585_cac248a169_c.jpg
-    large: https://farm8.staticflickr.com/7616/16748437585_cac248a169_b.jpg
-    original: https://farm8.staticflickr.com/7616/16748437585_09cd959b00_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7616/16748437585_cac248a169.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm8.staticflickr.com/7616/16748437585_cac248a169_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm8.staticflickr.com/7616/16748437585_cac248a169_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm8.staticflickr.com/7616/16748437585_09cd959b00_o.jpg
+    height: 2798
+    width: 3918
 - title: Filming
   date: '2015-02-25 13:08:14'
   model: Canon EOS 450D
   f_number: '7.1'
   exposure_time: 1/640
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8594/16126142324_098df44718.jpg
-    medium: https://farm9.staticflickr.com/8594/16126142324_098df44718_c.jpg
-    large: https://farm9.staticflickr.com/8594/16126142324_098df44718_b.jpg
-    original: https://farm9.staticflickr.com/8594/16126142324_74a4e01eb5_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8594/16126142324_098df44718.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8594/16126142324_098df44718_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8594/16126142324_098df44718_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8594/16126142324_74a4e01eb5_o.jpg
+    height: 2756
+    width: 3861
 - title: Jump
   date: '2015-02-25 13:18:12'
-  src:
+  video:
+    src: https://www.flickr.com/photos/paulrobertlloyd/16567881108/play/site/57b3b9b45f/
     poster: https://farm8.staticflickr.com/7593/16567881108_57b3b9b45f_c.jpg
-    video: https://www.flickr.com/photos/paulrobertlloyd/16567881108/play/site/57b3b9b45f/
 - title: Bode Museum
   date: '2015-02-25 13:18:14'
   model: Canon EOS 450D
   f_number: '7.1'
   exposure_time: 1/640
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8642/16748478985_27000e55b7.jpg
-    medium: https://farm9.staticflickr.com/8642/16748478985_27000e55b7_c.jpg
-    large: https://farm9.staticflickr.com/8642/16748478985_27000e55b7_b.jpg
-    original: https://farm9.staticflickr.com/8642/16748478985_9f0e24be21_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8642/16748478985_27000e55b7.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8642/16748478985_27000e55b7_c.jpg
+    height: 800
+    width: 533
+  large:
+    src: https://farm9.staticflickr.com/8642/16748478985_27000e55b7_b.jpg
+    height: 1024
+    width: 682
+  original:
+    src: https://farm9.staticflickr.com/8642/16748478985_9f0e24be21_o.jpg
+    height: 4013
+    width: 2674
 - title: Berlin Street Sign
   date: '2015-02-25 13:20:38'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/320
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8578/16126183524_c1afa47ed0.jpg
-    medium: https://farm9.staticflickr.com/8578/16126183524_c1afa47ed0_c.jpg
-    large: https://farm9.staticflickr.com/8578/16126183524_c1afa47ed0_b.jpg
-    original: https://farm9.staticflickr.com/8578/16126183524_829a40a00e_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8578/16126183524_c1afa47ed0.jpg
+    height: 375
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8578/16126183524_c1afa47ed0_c.jpg
+    height: 600
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8578/16126183524_c1afa47ed0_b.jpg
+    height: 768
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8578/16126183524_829a40a00e_o.jpg
+    height: 2694
+    width: 3594
 - title: Looking Towards the Fernsehturm (Television Tower)
   date: '2015-02-25 13:29:27'
   model: Canon EOS 450D
   f_number: '8.0'
   exposure_time: 1/800
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8562/16561118610_cecd708584.jpg
-    medium: https://farm9.staticflickr.com/8562/16561118610_cecd708584_c.jpg
-    large: https://farm9.staticflickr.com/8562/16561118610_cecd708584_b.jpg
-    original: https://farm9.staticflickr.com/8562/16561118610_9cc054924e_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8562/16561118610_cecd708584.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm9.staticflickr.com/8562/16561118610_cecd708584_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm9.staticflickr.com/8562/16561118610_cecd708584_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm9.staticflickr.com/8562/16561118610_9cc054924e_o.jpg
+    height: 3900
+    width: 2600
 - title: Church
   date: '2015-02-25 15:50:44'
   model: Canon EOS 450D
   f_number: '5.0'
   exposure_time: 1/250
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm8.staticflickr.com/7635/16747443832_528c0bf00f.jpg
-    medium: https://farm8.staticflickr.com/7635/16747443832_528c0bf00f_c.jpg
-    large: https://farm8.staticflickr.com/7635/16747443832_528c0bf00f_b.jpg
-    original: https://farm8.staticflickr.com/7635/16747443832_d72a49b084_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7635/16747443832_528c0bf00f.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7635/16747443832_528c0bf00f_c.jpg
+    height: 800
+    width: 534
+  large:
+    src: https://farm8.staticflickr.com/7635/16747443832_528c0bf00f_b.jpg
+    height: 1024
+    width: 683
+  original:
+    src: https://farm8.staticflickr.com/7635/16747443832_d72a49b084_o.jpg
+    height: 3906
+    width: 2604
 - title: Actually
   date: '2015-02-25 16:25:48'
   model: Canon EOS 450D
   f_number: '2.8'
   exposure_time: 1/100
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8672/16562432689_7f54a1c977.jpg
-    medium: https://farm9.staticflickr.com/8672/16562432689_7f54a1c977_c.jpg
-    large: https://farm9.staticflickr.com/8672/16562432689_7f54a1c977_b.jpg
-    original: https://farm9.staticflickr.com/8672/16562432689_2c9c0948f0_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8672/16562432689_7f54a1c977.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8672/16562432689_7f54a1c977_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8672/16562432689_7f54a1c977_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8672/16562432689_2c9c0948f0_o.jpg
+    height: 2637
+    width: 3694
 - title: Star
   date: '2015-02-25 17:13:49'
   model: Canon EOS 450D
   f_number: '3.2'
   exposure_time: 1/125
-  iso: '200'
+  iso: 200
   focal_length: 50.0 mm
-  src:
-    small: https://farm9.staticflickr.com/8568/16722641496_d77a658026.jpg
-    medium: https://farm9.staticflickr.com/8568/16722641496_d77a658026_c.jpg
-    large: https://farm9.staticflickr.com/8568/16722641496_d77a658026_b.jpg
-    original: https://farm9.staticflickr.com/8568/16722641496_f6fa37fecc_o.jpg
+  small:
+    src: https://farm9.staticflickr.com/8568/16722641496_d77a658026.jpg
+    height: 357
+    width: 500
+  medium:
+    src: https://farm9.staticflickr.com/8568/16722641496_d77a658026_c.jpg
+    height: 571
+    width: 800
+  large:
+    src: https://farm9.staticflickr.com/8568/16722641496_d77a658026_b.jpg
+    height: 731
+    width: 1024
+  original:
+    src: https://farm9.staticflickr.com/8568/16722641496_f6fa37fecc_o.jpg
+    height: 2498
+    width: 3499
 - title: Berlin Fernsehturm (Television Tower)
   date: '2015-02-25 21:03:33'
   model: iPhone 4S
   f_number: '2.4'
   exposure_time: 1/15
-  iso: '800'
+  iso: 800
   focal_length: 4.3 mm
-  src:
-    small: https://farm8.staticflickr.com/7593/16748543925_4e7647eb1b.jpg
-    medium: https://farm8.staticflickr.com/7593/16748543925_4e7647eb1b_c.jpg
-    large: https://farm8.staticflickr.com/7593/16748543925_4e7647eb1b_b.jpg
-    original: https://farm8.staticflickr.com/7593/16748543925_8e908075a3_o.jpg
+  small:
+    src: https://farm8.staticflickr.com/7593/16748543925_4e7647eb1b.jpg
+    height: 500
+    width: 333
+  medium:
+    src: https://farm8.staticflickr.com/7593/16748543925_4e7647eb1b_c.jpg
+    height: 800
+    width: 533
+  large:
+    src: https://farm8.staticflickr.com/7593/16748543925_4e7647eb1b_b.jpg
+    height: 1024
+    width: 682
+  original:
+    src: https://farm8.staticflickr.com/7593/16748543925_8e908075a3_o.jpg
+    height: 2817
+    width: 1877

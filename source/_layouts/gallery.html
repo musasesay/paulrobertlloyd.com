@@ -13,11 +13,13 @@ layout: default
             {% for photo in site.data.photosets[page.photoset] %}
             <figure class="u-extend">
                 {% if photo.src.video %}
-                <video controls poster="{{ photo.src.poster }}">
-                    <source src="{{ photo.src.video }}" type="video/mp4"/>
+                <video controls poster="{{ photo.poster.src }}">
+                    <source src="{{ photo.video.src }}" type="video/mp4"/>
                 </video>
                 {% else %}
-                <img src="{{ photo.src.large }}" alt="" data-full="{{ photo.src.original }}"/>
+                <a href="{{ photo.original.src }}">
+                    <img src="{{ photo.large.src }}" alt="" data-size="{{ photo.original.width }}x{{ photo.original.height }}"/>
+                </a>
                 {% endif %}
                 <figcaption>
                     {% include exif.html %}
