@@ -1,6 +1,6 @@
 title: Paul Robert Lloyd
+description: Paul Robert Lloyd is an independent designer, writer and speaker based in Brighton, England.
 url: https://paulrobertlloyd.com
-encoding: UTF-8
 theme:
   color: '#cc52cc'
   background-color: '#141214'
@@ -12,20 +12,10 @@ author:
   email: noreply@paulrobertlloyd.com
   photo: https://gravatar.com/avatar/15091a37bacfa4bdd011282627eaca2b?s=256
 
-# License (journal entries only)
-license:
-  type: Creative Commons
-  terms: BY-NC-SA
-  description: 'You can republish this content without asking permission, but you must credit me (Paul Robert Lloyd) as the author and provide a link back to the original. You may not use any content for commercial purposes. If you make any changes, you must distribute these under the same license as the original.'
-  url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-
 # Source code management
 scm:
   title: GitHub
   url: https://github.com/paulrobertlloyd/paulrobertlloyd.com
-
-# Permalinks
-permalink: /:year/:month/:title
 
 # Pagination
 paginate: 15
@@ -43,6 +33,7 @@ collections:
     permalink: :path
   discussions:
     output: true
+    permalink: /:year/:month/:title/discussion
   galleries:
     output: true
     permalink: /:year/:month/:title
@@ -73,6 +64,16 @@ defaults:
       type: posts
     values:
       layout: entry
+      permalink: /:year/:month/:title
+
+  - scope:
+      path: '_posts/entries'
+    values:
+      license:
+        type: Creative Commons
+        terms: BY-NC-SA
+        description: 'You can republish this content without asking permission, but you must credit me (Paul Robert Lloyd) as the author and provide a link back to the original. You may not use any content for commercial purposes. If you make any changes, you must distribute these under the same license as the original.'
+        url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 
   - scope:
       type: projects
@@ -154,8 +155,6 @@ picture:
 # Publishing
 source: ./source
 destination: ./public
-exclude:
-  - '**.scss'
 
 # Crossposting
 jekyll-crosspost_to_medium:

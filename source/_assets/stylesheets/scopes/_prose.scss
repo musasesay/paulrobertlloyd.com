@@ -3,8 +3,10 @@
 //  ===========================================================================
 
 .s-prose {
-    line-height: (24/18);
-    font-feature-settings: 'liga', 'dlig', 'onum';
+    line-height: (24 / 18);
+    font-feature-settings: "liga", "dlig", "onum";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
     > * {
         margin-bottom: 1rem;
@@ -14,7 +16,6 @@
         @include c2sc;
     }
 }
-
 
 // Body
 .s-prose--body {
@@ -146,7 +147,6 @@
         }
     }
 }
-
 
 // Lede
 .s-prose--lede {
