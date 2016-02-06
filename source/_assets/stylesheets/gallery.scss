@@ -8,7 +8,7 @@ $pswp__error-text-color: #ccc !default;
 $pswp__include-minimal-style: true !default;
 
 // Core
-@import "vendor/photoswipe/main.scss";
+@import "vendor/photoswipe/main";
 
 // Skin
-@import "vendor/photoswipe/default-skin.scss";
+@import "vendor/photoswipe/skin";

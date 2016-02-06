@@ -45,8 +45,7 @@
 .pswp__button,
 .pswp__button--arrow--left::before,
 .pswp__button--arrow--right::before {
-    background: url(default-skin.png) 0 0 no-repeat;
-    background-size: 264px 88px;
+    background-size: contain;
     width: 44px;
     height: 44px;
 }
@@ -64,11 +63,7 @@
 }
 
 .pswp__button--close {
-    background-position: 0 -44px;
-}
-
-.pswp__button--share {
-    background-position: -44px -44px;
+    background-image: url(asset_path("pswp-close.svg"));
 }
 
 .pswp__button--fs {
@@ -80,7 +75,7 @@
 }
 
 .pswp--fs .pswp__button--fs {
-    background-position: -44px 0;
+    background-image: url(asset_path("pswp-fs-exit.svg"));
 }
 
 .pswp__button--zoom {
@@ -93,7 +88,7 @@
 }
 
 .pswp--zoomed-in .pswp__button--zoom {
-    background-position: -132px 0;
+    background-image: url(asset_path("pswp-zoom-out.svg"));
 }
 
 // No arrows on touch screens
