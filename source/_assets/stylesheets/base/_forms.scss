@@ -61,6 +61,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+    border: 0;
     border-radius: 0;
     // Improve usability and consistency of cursor style between image-type `input` and others
     cursor: pointer;
