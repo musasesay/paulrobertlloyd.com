@@ -6,9 +6,6 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
-// Configuration
-$pswp__root-z-index: 1500 !default;
-
 // Gallery core
 @import "vendor/photoswipe/main";
 

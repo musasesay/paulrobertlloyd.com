@@ -2,7 +2,7 @@
 //  PhotoSwipe UI
 //  ===========================================================================
 
-// <button> css reset
+// Buttons
 .pswp__button {
     @include image-replace;
     width: 2.5rem;
@@ -18,14 +18,6 @@
     }
 }
 
-.pswp__button--arrow--left {
-    background-image: url(asset_path("pswp-prev.svg"));
-}
-
-.pswp__button--arrow--right {
-    background-image: url(asset_path("pswp-next.svg"));
-}
-
 .pswp__button--close {
     background-image: url(asset_path("pswp-close.svg"));
 
@@ -39,12 +31,10 @@
     display: none;
     background-image: url(asset_path("pswp-fs-enter.svg"));
 
-    // Full screen supported
     .pswp--supports-fs & {
         display: block;
     }
 
-    // Full screen
     .pswp--fs & {
         background-image: url(asset_path("pswp-fs-exit.svg"));
     }
@@ -54,18 +44,15 @@
     display: none;
     background-image: url(asset_path("pswp-zoom-in.svg"));
 
-    // Zooming allowed
     .pswp--zoom-allowed & {
         display: block;
     }
 
-    // Zoomed in
     .pswp--zoomed-in & {
         background-image: url(asset_path("pswp-zoom-out.svg"));
     }
 }
 
-// Arrow buttons
 .pswp__button--arrow--left,
 .pswp__button--arrow--right {
     top: 50%;
@@ -86,10 +73,12 @@
 
 .pswp__button--arrow--left {
     left: 0;
+    background-image: url(asset_path("pswp-prev.svg"));
 }
 
 .pswp__button--arrow--right {
     right: 0;
+    background-image: url(asset_path("pswp-next.svg"));
 }
 
 // Top bar with buttons and counter
@@ -103,18 +92,17 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-// 3. Counter
+// Counter
 .pswp__counter {
     @include fs--caption;
     user-select: none;
     left: 0;
     top: 0;
-    color: #fff;
     opacity: 0.75;
     padding: 0.625rem;
 }
 
-// 4. Caption
+// Caption
 .pswp__caption {
     position: absolute;
     left: 0;
@@ -133,12 +121,12 @@
     display: none;
 }
 
-// Fake caption element, used to calculate height of next/prev image
+// Used to calculate height of next/prev image
 .pswp__caption--fake {
     visibility: hidden;
 }
 
-// 5. Preloader (http://codepen.io/dimsemenov/pen/yyBWoR)
+// Preloader (http://codepen.io/dimsemenov/pen/yyBWoR)
 .pswp__preloader {
     margin: 0 auto;
     opacity: 0;
@@ -150,14 +138,6 @@
 
 .pswp__preloader--active {
     opacity: 1;
-
-    .pswp__preloader__icn {
-        animation: clockwise 500ms linear infinite;
-    }
-
-    .pswp__preloader__donut {
-        animation: donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
-    }
 }
 
 .pswp__preloader__icn {
@@ -168,6 +148,10 @@
     left: 15px;
     top: 15px;
     margin: 0;
+
+    .pswp__preloader--active & {
+        animation: clockwise 500ms linear infinite;
+    }
 }
 
 .pswp__preloader__cut {
@@ -188,6 +172,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    .pswp__preloader--active & {
+        animation: donut-rotate 1000ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
 }
 
 @keyframes clockwise {
@@ -201,24 +189,23 @@
     100% { transform: rotate(0) }
 }
 
-// Root element of UI
-.pswp__ui {
-    -webkit-font-smoothing: auto;
-    visibility: visible;
-    opacity: 1;
-    z-index: $pswp__root-z-index + 50;
-}
-
 .pswp__caption,
 .pswp__top-bar,
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
     -webkit-backface-visibility: hidden;
     will-change: opacity;
-    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .pswp__ui--idle added when mouse isn't moving for several seconds
+// Root element of UI
+.pswp__ui {
+    -webkit-font-smoothing: auto;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1050;
+}
+
 .pswp__ui--idle {
     .pswp__top-bar,
     .pswp__button--arrow--left,
@@ -227,19 +214,15 @@
     }
 }
 
-// .pswp__ui--hidden added when controls are hidden
-// e.g. when user taps to toggle visibility of controls
 .pswp__ui--hidden {
     .pswp__top-bar,
     .pswp__caption,
     .pswp__button--arrow--left,
     .pswp__button--arrow--right {
-        // Force paint & create composition layer for controls
         opacity: 0.001;
     }
 }
 
-// .pswp__ui--one-slide added when there is just one item in gallery
 .pswp__ui--one-slide {
     .pswp__button--arrow--left,
     .pswp__button--arrow--right,
