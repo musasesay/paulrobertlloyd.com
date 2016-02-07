@@ -1,6 +1,6 @@
 //  ===========================================================================
 //  PhotoSwipe
-//  Styles for basic functionality (sliding area, open/close transitions
+//  Styles for basic functionality (sliding area, open/close transitions)
 //  ===========================================================================
 
 .pswp {
@@ -124,7 +124,6 @@
     -webkit-backface-visibility: hidden;
 }
 
-// Error message appears when image is not loaded
 .pswp__error-msg {
     @include fs--caption;
     position: absolute;

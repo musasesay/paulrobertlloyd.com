@@ -6,8 +6,8 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
-// Gallery core
+// Photoswipe
 @import "vendor/photoswipe/main";
 
-// Gallery skin
-@import "vendor/photoswipe/skin";
+// Photoswipe UI
+@import "vendor/photoswipe/ui";

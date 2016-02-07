@@ -1,5 +1,6 @@
 //  ===========================================================================
-//  PhotoSwipe UI
+//  PhotoSwipe
+//  UI
 //  ===========================================================================
 
 // Buttons
@@ -21,9 +22,8 @@
 .pswp__button--close {
     background-image: url(asset_path("pswp-close.svg"));
 
-    // Mouse is over element that closes gallery
     .pswp__ui--over-close & {
-        opacity: 1;
+        opacity: 1; // Mouse is over element that closes gallery
     }
 }
 
@@ -60,14 +60,12 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
 
-    // No arrows on touch screens
     .pswp--touch & {
-        visibility: hidden;
+        visibility: hidden; // No arrows on touch screens
     }
 
-    // Two subsequent mousemove events have occured
     .pswp--has_mouse & {
-        visibility: visible;
+        visibility: visible; // Two mouse movements have occured
     }
 }
 
@@ -81,7 +79,7 @@
     background-image: url(asset_path("pswp-next.svg"));
 }
 
-// Top bar with buttons and counter
+// Top bar
 .pswp__top-bar {
     display: flex;
     position: absolute;
@@ -112,18 +110,17 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.pswp__caption__center {
-    max-width: $b__a;
-    padding: 0.75rem;
-}
-
 .pswp__caption--empty {
     display: none;
 }
 
-// Used to calculate height of next/prev image
 .pswp__caption--fake {
     visibility: hidden;
+}
+
+.pswp__caption__center {
+    max-width: $b__a;
+    padding: 0.75rem;
 }
 
 // Preloader (http://codepen.io/dimsemenov/pen/yyBWoR)
@@ -198,7 +195,6 @@
     transition: opacity 333ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// Root element of UI
 .pswp__ui {
     -webkit-font-smoothing: auto;
     visibility: visible;
