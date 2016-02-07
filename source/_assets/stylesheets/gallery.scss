@@ -7,12 +7,7 @@
 @import "helpers/mixins";
 
 // Configuration
-$pswp__show-hide-transition-duration: 333ms !default;
-$pswp__controls-transition-duration: 333ms !default;
-$pswp__background-color: #000 !default;
-$pswp__placeholder-color: #222 !default;
 $pswp__root-z-index: 1500 !default;
-$pswp__error-text-color: #ccc !default;
 
 // Gallery core
 @import "vendor/photoswipe/main";

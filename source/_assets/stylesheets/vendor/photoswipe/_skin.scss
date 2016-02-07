@@ -65,7 +65,7 @@
     }
 }
 
-// Arrow buttons hit area
+// Arrow buttons
 .pswp__button--arrow--left,
 .pswp__button--arrow--right {
     top: 50%;
@@ -77,6 +77,11 @@
     .pswp--touch & {
         visibility: hidden;
     }
+
+    // Two subsequent mousemove events have occured
+    .pswp--has_mouse & {
+        visibility: visible;
+    }
 }
 
 .pswp__button--arrow--left {
@@ -85,6 +90,17 @@
 
 .pswp__button--arrow--right {
     right: 0;
+}
+
+// Top bar with buttons and counter
+.pswp__top-bar {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 // 3. Counter
@@ -96,7 +112,6 @@
     color: #fff;
     opacity: 0.75;
     padding: 0.625rem;
-    margin-right: 0;
 }
 
 // 4. Caption
@@ -106,7 +121,12 @@
     bottom: 0;
     width: 100%;
     min-height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pswp__caption__center {
     max-width: $b__a;
+    padding: 0.75rem;
 }
 
 .pswp__caption--empty {
@@ -118,8 +138,7 @@
     visibility: hidden;
 }
 
-// 5. Loading indicator (preloader)
-// You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
+// 5. Preloader (http://codepen.io/dimsemenov/pen/yyBWoR)
 .pswp__preloader {
     margin: 0 auto;
     opacity: 0;
@@ -127,12 +146,6 @@
     will-change: opacity;
     direction: ltr;
     position: relative;
-}
-
-.pswp__preloader__icn {
-    width: 20px;
-    height: 20px;
-    margin: 12px;
 }
 
 .pswp__preloader--active {
@@ -148,7 +161,6 @@
 }
 
 .pswp__preloader__icn {
-    background: none;
     opacity: 0.75;
     width: 14px;
     height: 14px;
@@ -176,8 +188,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: none;
-    margin: 0;
 }
 
 @keyframes clockwise {
@@ -199,39 +209,16 @@
     z-index: $pswp__root-z-index + 50;
 }
 
-// top black bar with buttons and "1 of X" indicator
-.pswp__top-bar {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    justify-content: flex-end;
-}
-
 .pswp__caption,
 .pswp__top-bar,
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
     -webkit-backface-visibility: hidden;
     will-change: opacity;
-    transition: opacity $pswp__controls-transition-duration cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
-// pswp--has_mouse class added only two subsequent mousemove events occur
-.pswp--has_mouse {
-    .pswp__button--arrow--left,
-    .pswp__button--arrow--right {
-        visibility: visible;
-    }
-}
-
-.pswp__top-bar,
-.pswp__caption {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-// pswp__ui--idle class added when mouse isn't moving for several seconds
+// .pswp__ui--idle added when mouse isn't moving for several seconds
 .pswp__ui--idle {
     .pswp__top-bar,
     .pswp__button--arrow--left,
@@ -252,7 +239,7 @@
     }
 }
 
-// pswp__ui--one-slide class added when there is just one item in gallery
+// .pswp__ui--one-slide added when there is just one item in gallery
 .pswp__ui--one-slide {
     .pswp__button--arrow--left,
     .pswp__button--arrow--right,
