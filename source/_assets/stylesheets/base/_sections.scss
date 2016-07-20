@@ -1,16 +1,41 @@
-//  ===========================================================================
-//  Grouping content
-//  http://developers.whatwg.org/sections.html
-//  ===========================================================================
+// ========================================================
+// Grouping content
+// https://w3c.github.io/html/sections.html
+// ========================================================
 
 html {
     box-sizing: border-box;
+
+    &::after {
+        display: none;
+        content: "s";
+
+        @media screen and (min-width: $b__a) {
+            content: "m";
+        }
+
+        @media screen and (min-width: $b__b) {
+            content: "l";
+        }
+
+        @media screen and (min-width: $b__c) {
+            content: "xl";
+        }
+    }
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+*:target {
+    @include text-highlight();
+
+    * {
+        @include text-decoration-color("none");
+    }
 }
 
 ::selection {
@@ -21,10 +46,13 @@ html {
 body {
     @include ff--sans-serif;
     margin: 0 auto;
+    line-height: 1.5;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
     @media print {
         margin: 0 1cm;
-        color: $c__neutral-black;
+        color: black;
     }
 }
 

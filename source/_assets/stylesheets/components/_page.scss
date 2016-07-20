@@ -1,11 +1,11 @@
-//  ===========================================================================
-//  Page
-//  ===========================================================================
+// ========================================================
+// Page
+// ========================================================
 
 .c-page__header,
 .c-page__footer {
     @media screen and (min-width: $b__b) {
-        padding-left: span(3 wide);
+        padding-left: percentage(3/12);
     }
 }
 
@@ -13,7 +13,7 @@
     @media screen and (min-width: $b__b) {
         position: absolute;
         padding-left: 0;
-        width: span(3 first);
+        width: percentage(3/12);
     }
 
     .c-page__title {
@@ -26,12 +26,18 @@
 }
 
 .c-page__footer {
-    margin-bottom: 2.5rem;
+    margin-bottom: units(4);
     color: $c__neutral-mid;
 }
 
 .c-page__title {
     @include fs--title;
-    margin-bottom: 1rem;
+    margin-bottom: units(2);
     font-weight: 700;
+}
+
+.c-page__license {
+    position: relative;
+    top: -1px;
+    margin-left: 0.25rem;
 }

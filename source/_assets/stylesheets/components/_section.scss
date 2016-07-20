@@ -1,14 +1,17 @@
-//  ===========================================================================
-//  Section
-//  ===========================================================================
+// ========================================================
+// Section
+// ========================================================
 
 .c-section {
     @include clearfix;
-    margin-bottom: 2rem;
+
+    &:not(:last-child) {
+        margin-bottom: units(3);
+    }
 
     @media screen and (min-width: $b__b) {
-        padding-right: span(1 wide);
-        padding-left: span(3 wide);
+        padding-right: percentage(1/12);
+        padding-left: percentage(3/12);
     }
 }
 
@@ -22,15 +25,15 @@
 
 // Archive
 .c-section--archive {
-    .c-section__header {
-        @media (min-width: $b__a) {
-            @include span(3 of 12 first);
-        }
-    }
+    @media (min-width: $b__a) {
+        display: flex;
 
-    .c-section__main {
-        @media (min-width: $b__a) {
-            @include span(9 of 12 last);
+        .c-section__header {
+            width: percentage(3/12);
+        }
+
+        .c-section__main {
+            width: percentage(9/12);
         }
     }
 }

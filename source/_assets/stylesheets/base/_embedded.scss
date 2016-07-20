@@ -1,17 +1,43 @@
-//  ===========================================================================
-//  Embedded content
-//  http://developers.whatwg.org/embedded-content-1
-//  ===========================================================================
+// ========================================================
+// Embedded content
+// https://w3c.github.io/html/semantics-embedded-content.html
+// ========================================================
 
 img {
     // Remove border when inside `a` element in IE 8/9
     display: block;
-    border: 0;
+    position: relative;
+    min-height: 2.75rem;
     max-width: 100%;
+    border: 0;
+
+    // Broken image styles
+    // http://bitsofco.de/styling-broken-images/
+    &::before {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $c__neutral-mid;
+        content: "";
+    }
+
+    &::after {
+        @include fs--caption;
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 0.75rem;
+        text-align: center;
+        color: white;
+        content: "\2298\0020\0020Unable to load this image";
+    }
 }
 
 svg:not(:root) {
     // Correct overflow displayed oddly in IE 9
     overflow: hidden;
+    vertical-align: middle;
     fill: currentColor;
 }

@@ -1,6 +1,3 @@
-// Frameworks
-@import "susy";
-
 // Helpers
 @import "helpers/functions";
 @import "helpers/variables";
@@ -11,6 +8,7 @@
 @import "base/sections";
 @import "base/grouping";
 @import "base/text";
+@import "base/edits";
 @import "base/embedded";
 @import "base/links";
 @import "base/tables";

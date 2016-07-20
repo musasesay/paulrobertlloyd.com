@@ -1,10 +1,12 @@
-//  ===========================================================================
-//  Layout
-//  ===========================================================================
+// ========================================================
+// Layout
+// ========================================================
 
 // Container
 .u-container {
-    @include container($u__max-width);
+    max-width: $u__max-width;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 1rem;
     padding-left: 1rem;
 
@@ -21,12 +23,19 @@
 
 // Show two items abreast, three on wider breakpoints
 .u-triad {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+
     .c-item,
     .c-nav__item {
-        @include gallery(2 of 4);
+        flex: 1 0 percentage(1/2);
+        padding: 0 0.75rem;
 
         @media (min-width: $b__b) {
-            @include gallery(2 of 6);
+            flex: 1 0 percentage(1/3);
         }
     }
 }
@@ -36,16 +45,16 @@
     float: right;
     margin-top: 0 !important;
     margin-bottom: 0.5rem !important;
-    margin-left: $gn__gutter !important;
-    width: $gn__span2;
+    margin-left: $u__gutter !important;
+    width: $u__colspan2;
 }
 
 .u-align-left {
     float: left;
     margin-top: 0 !important;
-    margin-right: $gn__gutter !important;
+    margin-right: $u__gutter !important;
     margin-bottom: 0.5rem !important;
-    width: $gn__span2;
+    width: $u__colspan2;
 }
 
 // Pull element aside
@@ -54,9 +63,8 @@
 
     @media screen and (min-width: $b__b) {
         float: left;
-        margin-right: $gn__gutter !important;
-        margin-left: (-$gn__span3-wide) !important;
-        width: $gn__span3;
+        margin-left: ($u__colspan3 * -1) !important;
+        width: calc(#{$u__colspan3} - #{$u__gutter});
     }
 
     + * {
@@ -71,12 +79,12 @@
 
     @media (min-width: $b__a) {
         float: right;
-        margin-left: $gn__gutter !important;
-        width: $gn__span4;
+        margin-left: $u__gutter !important;
+        width: $u__colspan4;
     }
 
     @media screen and (min-width: $b__b) {
-        margin-right: (-$gn__span1-wide);
+        margin-right: ($u__colspan1 * -1);
     }
 }
 
@@ -86,12 +94,12 @@
 
     @media (min-width: $b__a) {
         float: left;
-        margin-right: $gn__gutter !important;
-        width: $gn__span4;
+        margin-right: $u__gutter !important;
+        width: $u__colspan4;
     }
 
     @media screen and (min-width: $b__b) {
-        margin-left: (-$gn__span3-wide);
+        margin-left: ($u__colspan3 * -1);
     }
 }
 
@@ -101,8 +109,8 @@
     clear: both;
 
     @media screen and (min-width: $b__b) {
-        margin-right: (-$gn__span1-wide);
-        margin-left: (-$gn__span3-wide);
+        margin-right: ($u__colspan1 * -1);
+        margin-left: ($u__colspan3 * -1);
     }
 }
 
@@ -118,14 +126,12 @@
     }
 
     @media screen and (min-width: $b__b) {
-        margin-right: (-$gn__span1-wide);
-        margin-right: calc(#{(-$gn__span1-wide)} - 2rem);
-        margin-left: (-$gn__span3-wide);
-        margin-left: calc(#{(-$gn__span3-wide)} - 2rem);
+        margin-right: calc((#{$u__colspan1} * -1) - 2rem);
+        margin-left: calc((#{$u__colspan3} * -1) - 2rem);
     }
 
     @media screen and (min-width: $b__c) {
-        margin-right: (-$gn__span1-wide);
-        margin-left: (-$gn__span3-wide);
+        margin-right: ($u__colspan1 * -1);
+        margin-left: ($u__colspan3 * -1);
     }
 }

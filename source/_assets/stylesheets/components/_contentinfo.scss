@@ -1,41 +1,54 @@
-//  ===========================================================================
-//  Content Info
-//  ===========================================================================
+// ========================================================
+// Content Info
+// ========================================================
 
 .c-contentinfo {
     @include fs--caption;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: $c__neutral-mid;
+    margin-bottom: units(3);
 }
 
 .c-contentinfo__main {
-    border-top: $u__rule-height solid rgba($c__neutral-mid, 0.5); // 1.5px
-    padding: 1rem 0;
-
-    @media screen and (min-width: $b__a) {
-        display: flex;
-    }
+    position: relative;
 
     @media screen and (min-width: $b__b) {
-        margin-left: span(3 wide);
-    }
-}
-
-.c-contentinfo__license {
-    margin-bottom: 1rem;
-
-    @media screen and (min-width: $b__a) {
-        flex: 1 1 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 .c-contentinfo__social {
-    @media screen and (min-width: $b__a) {
+    display: flex;
+    margin-bottom: units(1);
+
+    @media screen and (min-width: $b__b) {
         flex: 0 0 auto;
+        width: percentage(3/12);
     }
 
     @media print {
         display: none;
+    }
+}
+
+.c-contentinfo__links {
+    margin-bottom: units(1);
+
+    @media screen and (min-width: $b__b) {
+        flex: 0 1 auto;
+    }
+
+    @media print {
+        display: none;
+    }
+}
+
+.c-contentinfo__copyright {
+    margin-bottom: units(1);
+
+    @media screen and (min-width: $b__b) {
+        flex: 0 0 auto;
+        margin-right: percentage(1/12);
+        margin-left: auto;
     }
 }

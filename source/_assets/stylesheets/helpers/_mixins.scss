@@ -1,6 +1,6 @@
-//  ===========================================================================
-//  Mixins
-//  ===========================================================================
+// ========================================================
+// Mixins
+// ========================================================
 
 // Clearfix
 @mixin clearfix {
@@ -18,18 +18,18 @@
     font-weight: $font-weight;
 
     .fonts-loaded & {
-        font-family: "Calibre", "Helvetica Neue", sans-serif;
+        font-family: Calibre, "Helvetica Neue", sans-serif;
     }
 }
 
 @mixin ff--monospace($font-weight: normal) {
-    font-family: "Menlo", monospace;
+    font-family: Menlo, monospace;
     font-weight: $font-weight;
 }
 
 // Font sizes
 @mixin fs--title {
-    line-height: (30 / 32);
+    line-height: (32 / 32);
     font-size: 2rem; // 32px
     letter-spacing: -0.025em;
 
@@ -43,11 +43,12 @@
 }
 
 @mixin fs--heading-1 {
-    line-height: (28 / 28);
+    line-height: (32 / 28);
     font-size: 1.75rem; // 28px
     letter-spacing: -0.025em;
 
     @media (min-width: $b__b) {
+        line-height: (40.01 / 36);
         font-size: 2.25rem; // 36px
     }
 }
@@ -58,6 +59,7 @@
     letter-spacing: -0.025em;
 
     @media (min-width: $b__b) {
+        line-height: (28 / 24);
         font-size: 1.5rem; // 24px
     }
 }
@@ -90,30 +92,46 @@
     @media (min-width: $b__c) {
         font-size: 1.125rem; // 18px
     }
+
+    @media (min-width: $b__d) {
+        font-size: 1.25rem; // 20px
+    }
 }
 
 @mixin fs--caption {
-    line-height: (20 / 14);
+    line-height: (20.01 / 14);
     font-size: 0.875rem; // 14px
+    letter-spacing: -0.025em;
 }
 
 // Caps
-@mixin smcp { font-feature-settings: "smcp", "onum"; }
+@mixin smcp {
+    // font-variant: small-caps;
+    // font-size: 125%;
+    // letter-spacing: 0.025em;
+    // line-height: 0.1;
+}
 
-@mixin c2sc { font-feature-settings: "c2sc", "onum"; }
+@mixin c2sc {
+    // font-variant: all-small-caps;
+    // font-size: 125%;
+    // letter-spacing: 0.025em;
+    // line-height: 0.1;
+}
 
 // Text highlight
 @mixin text-highlight($color: $c__select) {
     background-color: $color;
-    margin-right: -0.1875rem;
-    margin-left: -0.1875rem;
-    padding: 0.1875rem;
+    margin-right: -0.125rem;
+    margin-left: -0.125rem;
+    padding: 0.125rem;
+    text-shadow: 0 0 $color;
 }
 
 // Text underline colour
 @mixin text-decoration-color($color, $background-color: transparent) {
     @if $color != "none" {
-        background-image: linear-gradient(to bottom, transparent 89%, $color 89%, $color 92.5%, transparent 92.5%);
+        background-image: linear-gradient(to bottom, transparent 89%, $color 89%, $color 95%, transparent 95%);
         text-decoration: none;
         text-shadow:
             0 0.03em $background-color,
