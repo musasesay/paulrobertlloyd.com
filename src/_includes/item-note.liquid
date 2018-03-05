@@ -1,0 +1,28 @@
+<article class="c-item c-item--note">
+  {% if item.title != "" %}
+  <header class="c-item__header">
+    <h3 class="c-item__title">{{ item.title | smartify }}</h3>
+  </header>
+  {% endif %}
+
+  <div class="c-item__main s-prose">
+    {% if item.image %}
+    <p class="c-item__media">
+      <a href="{{ item.url }}">
+        {% include image
+          src=item.image
+          class="u-photo"
+        %}
+      </a>
+    </p>
+    {% endif %}
+    {{ item.content | markdownify | smartify }}
+  </div>
+
+  <footer class="c-item__footer">
+    {% if include.showtype == true %}<b class="p-category">{{ item.layout | capitalize }}</b><span aria-label=","> ·</span>{% endif %}
+    <a href="{{ item.url }}" rel="bookmark">
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: site.date_format }}, {{ item.date | date: "%l:%M%P" }}</time>
+    </a>
+  </footer>
+</article>

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="c-page  h-entry">
+  {% include page-header %}
+
+  <div class="c-section">
+    <div class="s-prose s-prose--body  e-content">
+      {{ content | smartify }}
+    </div>
+  </div>
+
+  {% include page-footer %}
+</article>
+
+{% if page.discussion %}
+  {% include section--discussion %}
+{% endif %}
+
+{% if page.series %}
+  {% include section--related %}
+{% endif %}

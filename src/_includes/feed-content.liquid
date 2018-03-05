@@ -1,0 +1,9 @@
+{% if item.embed %}
+  {% include figure-embed
+    src=item.link
+  %}
+{% endif %}
+{{ item.content | markdownify }}
+{% if item.link %}
+  <a href="{{ site.url }}{{ item.url }}" title="Permalink">#</a>
+{% endif %}

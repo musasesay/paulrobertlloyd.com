@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="c-page  h-entry">
+  {% include page/header excerpt=page.excerpt %}
+
+  <div class="c-section">
+    <div class="s-prose s-prose--body  e-content">
+      {{ content | smartify }}
+    </div>
+  </div>
+</article>
+
+{% if page.series %}
+  {% include section--related %}
+{% endif %}

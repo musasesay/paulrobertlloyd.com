@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="c-page  h-entry">
+  {% include page-header %}
+
+  <div class="c-section">
+    <div class="s-prose s-prose--body  e-content">
+      {% include meta class="u-aside" %}
+
+      {{ content | smartify }}
+
+      {% for slide in page.slides %}
+        {% include slide %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {% include page-footer %}
+</article>

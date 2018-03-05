@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/"-->
+<html lang="en-gb" prefix="og: http://ogp.me/ns#" class="fonts-loaded">
+<!--#else-->
+<html lang="en-gb" prefix="og: http://ogp.me/ns#">
+<!--#endif-->
+<head>
+  <link href="/assets/calibre-regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin/>
+  <link href="/assets/site.css" rel="stylesheet"/>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/ico"/>
+  <link href="/assets/icon.png" rel="apple-touch-icon" type="image/png"/>
+  <link href="/assets/icon.svg" rel="mask-icon" color="{{ site.theme_color }}"/>
+  <link href="{{ site.url }}{{ page.url | remove:"index.html" | remove:".html" }}" rel="canonical"/>
+  <link href="/site.webmanifest" rel="manifest"/>
+  <link href="/serviceworker.js" rel="serviceworker"/>
+  <link href="/feed.xml" rel="alternate" type="application/atom+xml" title="Journal (XML Atom)"/>
+  <link href="/feed.json" rel="alternate" type="application/json" title="Journal (JSON Feed)"/>
+  <link href="https://paulrobertlloyd.com" rel="me"/>
+  <link href="https://indieauth.com/auth" rel="authorization_endpoint"/>
+  <link href="https://tokens.indieauth.com/token" rel="token_endpoint"/>
+  <link href="https://paulrobertlloyd-micropub.herokuapp.com/micropub/main" rel="micropub"/>
+
+  <script src="/assets/site.js" async></script>
+
+  <meta charset="utf-8"/>
+  <meta name="referrer" content="origin"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="{{ site.theme_color }}"/>
+{% if page.path contains ".md" %}
+  <meta property="og:title" content="{{ page.title | xml_escape | smartify }}"/>
+  <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines }}"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}/image/640x360/100q/{{ page.image }}"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  {% else %}
+  <meta property="og:image" content="{{ site.author.avatar }}"/>
+  <meta name="twitter:card" content="summary"/>
+  {% endif %}
+  <meta name="twitter:site" content="@paulrobertlloyd"/>
+{% endif %}
+  <title>{% if page.title != "" %}{{ page.title | smartify }} / {% endif %}{{ site.title }}</title>
+</head>
+
+<body>
+  {% include banner %}
+  {% include navigation %}
+
+  <main class="c-main">
+    {{ content }}
+  </main>
+
+  {% include contentinfo %}
+  {% include offline %}
+</body>
+</html>

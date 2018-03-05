@@ -1,0 +1,19 @@
+---
+layout: default
+title: Links
+permalink: /links/
+regenerate: true
+pagination:
+  enabled: true
+  collection: links
+  per_page: 8
+---
+<h1 class="c-main__title">{{ page.title | smartify }}</h1>
+
+<div class="c-section">
+{% for item in paginator.posts %}
+  {% include item/link %}
+{% endfor %}
+</div>
+
+{% include pagination %}

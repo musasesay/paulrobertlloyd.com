@@ -1,0 +1,26 @@
+<article class="c-item c-item--link">
+  <header class="c-item__header">
+    <h3 class="c-item__title">
+      <a href="{{ item.link }}" rel="external">{{ item.title | smartify }}</a>
+    </h3>
+  </header>
+
+  <div class="c-item__main s-prose">
+    {% if item.embed %}
+      {% include figure-embed
+        src=item.link
+        title=item.title
+        class="u-bleed"
+      %}
+    {% endif %}
+
+    {{ item.content | markdownify | smartify }}
+  </div>
+
+  <footer class="c-item__footer">
+    {% if include.showtype == true %}<b class="p-category">{{ item.layout | capitalize }}</b><span aria-label=","> ·</span>{% endif %}
+    <a href="{{ item.url }}" rel="bookmark">
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: site.date_format }}</time>
+    </a>
+  </footer>
+</article>
